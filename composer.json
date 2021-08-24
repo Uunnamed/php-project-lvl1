@@ -5,9 +5,9 @@
     "license": "GPL-3.0-or-later",
     "bin": ["bin/brain-games"],
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
+        "files" : [
+            "src/Cli.php"
+        ]
     },
     "authors": [
         {
@@ -15,5 +15,7 @@
             "email": "uunnamed@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.13"
+    }
 }

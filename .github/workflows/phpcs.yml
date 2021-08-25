@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        run: composer install --dev --prefer-dist --no-progress --no-suggest
-      - name: PHPCS check
-        uses: chekalsky/phpcs-action@v1
-        with:
-          phpcs_bin_path: './vendor/bin/phpcs'
+        run: composer install
+      - name: Check code style
+        run: make lint

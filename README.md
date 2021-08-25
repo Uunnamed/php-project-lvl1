@@ -5,3 +5,8 @@
 # Brain Games
 
 ## Games for Pinky & the Brain
+
+
+```
+$ make brain-games
+```

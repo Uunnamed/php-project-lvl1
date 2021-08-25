@@ -8,12 +8,12 @@ on:
       - '**'
 
 jobs:
-  phpcs:
-    name: PHPCS
+  linter:
+    name: check code style
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: composer install
-      - name: Check code style
+      - name: Run liner
         run: make lint

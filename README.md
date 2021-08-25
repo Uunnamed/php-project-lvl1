@@ -4,6 +4,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/abf82eb499336478519d/maintainability)](https://codeclimate.com/github/Uunnamed/php-project-lvl1/maintainability)
 <a href="https://codeclimate.com/github/Uunnamed/php-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/abf82eb499336478519d/test_coverage" /></a>
 
-#Brain Games
+# Brain Games
 
-##Games for Pinky & the Brain
+## Games for Pinky & the Brain

@@ -1,5 +1,7 @@
 #!/usr/bin/env php
 <?php
-    require_once realpath('vendor/autoload.php');
-    use Brain\Games\Cli;
-    Cli\greeting();
+require_once realpath('vendor/autoload.php');
+
+use Brain\Games\Cli;
+
+Cli\greeting();

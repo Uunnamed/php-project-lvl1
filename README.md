@@ -6,7 +6,9 @@
 
 ## Games for Pinky & the Brain
 
+### Brain game `Even`
+```
+$ make brain-even
+```
 
-```
-$ make brain-games
-```
+[![asciicast](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0.png)](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0)

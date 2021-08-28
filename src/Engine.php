@@ -27,7 +27,7 @@ function game($title, $fnGenQuestion): void
         $i++;
     } while ($i < COUNT_OF_TRY);
     $result = ($i == COUNT_OF_TRY)
-            ? "Congratulations, {$name}"
-            : "Let's try again, {$name}";
+            ? "Congratulations, {$name}!"
+            : "Let's try again, {$name}!";
     line($result);
 }

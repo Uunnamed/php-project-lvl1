@@ -6,7 +6,7 @@ use function Brain\Games\Engine\game;
 
 function isEven(int $num): bool
 {
-    if (!($num % 2)) {
+    if (($num % 2) == 0) {
         return true;
     }
     return false;
@@ -16,7 +16,7 @@ function isEven(int $num): bool
 
 function run(): void
 {
-    $genQuestion = function () {
+    $genQuestion = function (): array {
         $num = random_int(1, 22);
         $rigthAnswer = isEven($num) ? 'yes' : 'no';
         return [$num, $rigthAnswer];

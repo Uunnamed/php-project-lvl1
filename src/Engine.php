@@ -8,7 +8,7 @@ use function cli\prompt;
 const COUNT_OF_TRY = 3;
 
 
-function game($title, $fnGenQuestion): void
+function game(string $title, callable $fnGenQuestion): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -16,11 +16,11 @@ function game($title, $fnGenQuestion): void
     line($title);
     $i = 0;
     do {
-        [$question, $rigthAnswer] = $fnGenQuestion();
+        [$question, $rightAnswer] = $fnGenQuestion();
         line("Question: {$question}");
         $answer = prompt('Your answer');
-        if ($answer != $rigthAnswer) {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$rigthAnswer}'.");
+        if ($answer != $rightAnswer) {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             break;
         }
         line('Correct!');

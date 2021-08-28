@@ -11,7 +11,7 @@ const MIN_INT_NUM_1 = -199;
 const MAX_INT_NUM_2 = 20;
 const MIN_INT_NUM_2 = 0;
 
-function calc($operator, $num1, $num2)
+function calc(string $operator, int $num1, int $num2): int
 {
     switch ($operator) {
         case '*':
@@ -25,7 +25,7 @@ function calc($operator, $num1, $num2)
     }
 }
 
-function run()
+function run(): void
 {
     $title = 'What is the result of the expression?';
     $genQuestion = function () {

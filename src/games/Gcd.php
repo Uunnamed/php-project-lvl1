@@ -21,7 +21,7 @@ function gcd(int $num1, int $num2): int
 function run(): void
 {
     $title = 'Find the greatest common divisor of given numbers.';
-    $genQuestion = function () {
+    $genQuestion = function (): array {
         $num1 = random_int(MIN_INT_NUM_1, MAX_INT_NUM_1);
         $num2 = random_int(MIN_INT_NUM_2, MAX_INT_NUM_2);
         $question = "{$num1} {$num2}";

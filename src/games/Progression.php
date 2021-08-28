@@ -10,8 +10,8 @@ const MAX_OFFSET = 15;
 
 
 function getRandArithmeticProgression(
-    $min = MIN_ELEMETS_PROGRESSION,
-    $max = MAX_ELEMETS_PROGRESSION
+    int $min = MIN_ELEMETS_PROGRESSION,
+    int $max = MAX_ELEMETS_PROGRESSION
 ): array {
     $randOffset = random_int(0, MAX_OFFSET);
     $progression = [$randOffset];
@@ -25,7 +25,7 @@ function getRandArithmeticProgression(
 function run(): void
 {
     $title = 'What number is missing in the progression?';
-    $genQuestion = function () {
+    $genQuestion = function (): array {
         $progression = getRandArithmeticProgression();
          $i = random_int(0, count($progression) - 1);
          $answer = $progression[$i];

@@ -1,6 +1,6 @@
 {
     "name": "hexlet/code",
-    "type": "project",
+    "type": "library",
     "description": "The first training project on php in hexlet",
     "license": "MIT",
     "bin": [

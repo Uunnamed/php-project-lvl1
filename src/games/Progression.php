@@ -27,7 +27,7 @@ function run(): void
     $title = 'What number is missing in the progression?';
     $genQuestion = function () {
         $progression = getRandArithmeticProgression();
-         $i = random_int(0, count($progression));
+         $i = random_int(0, count($progression) - 1);
          $answer = $progression[$i];
          $progression[$i] = '..';
          $question = implode(' ', $progression);

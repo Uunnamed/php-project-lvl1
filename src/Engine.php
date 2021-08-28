@@ -20,7 +20,7 @@ function game($title, $fnGenQuestion): void
         line("Question: {$question}");
         $answer = prompt('Your answer');
         if ($answer != $rigthAnswer) {
-            line("'{$answer}'is wrong answer ;(. Correct answer was '{$rigthAnswer}'.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$rigthAnswer}'.");
             break;
         }
         line('Correct!');

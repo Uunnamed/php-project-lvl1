@@ -6,33 +6,41 @@
 
 ## Games for Pinky & the Brain
 
-### Brain game `Even`
+### Game `Even`
 ```
 $ make brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0.png)](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0)
+[![asciicast](https://asciinema.org/a/aWYTFUclLNWidinduP8Ou3Eiy.png)](https://asciinema.org/a/aWYTFUclLNWidinduP8Ou3Eiy)
 
 
-### Brain game `Calc`
+### Game `Calc`
 ```
 $ make brain-calc
 ```
 
-[![asciicast](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py.svg)](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py)
+[![asciicast](https://asciinema.org/a/gZ6kUsiVoAG7y0sXHFOpHOniZ.svg)](https://asciinema.org/a/gZ6kUsiVoAG7y0sXHFOpHOniZ)
 
-### Brain game `Gcd`
+### Game `Gcd`
 ```
 $ make brain-gcd
 ```
 
-[![asciicast](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm.svg)](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm)
+[![asciicast](https://asciinema.org/a/57x3ZwuSaUOstqPQvkuAuCD4s.svg)](https://asciinema.org/a/57x3ZwuSaUOstqPQvkuAuCD4s)
 
 
-### Brain game `progression`
+### Game `Progression`
 ```
-$ make brain-gcd
+$ make brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/d16DXT2oa9JORzr5Egww2V8JK.svg)](https://asciinema.org/a/d16DXT2oa9JORzr5Egww2V8JK)
+
+### Game `Prime`
+```
+$ make brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/IQKdh2fFtbFVZGSDBA969SWia.svg)](https://asciinema.org/a/IQKdh2fFtbFVZGSDBA969SWia)
+
 

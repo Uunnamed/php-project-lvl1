@@ -28,7 +28,7 @@ function calc(string $operator, int $num1, int $num2): int
 function run(): void
 {
     $title = 'What is the result of the expression?';
-    $genQuestion = function () {
+    $genQuestion = function (): array {
         $operations = ['*', '-', '+'];
         $operator = $operations[random_int(0, count($operations) - 1)];
         $num1 = random_int(MIN_INT_NUM_1, MAX_INT_NUM_1);

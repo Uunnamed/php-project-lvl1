@@ -2,12 +2,13 @@
     "name": "hexlet/code",
     "type": "project",
     "description": "The first training project on php in hexlet",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "autoload": {
         "files" : [
@@ -15,7 +16,8 @@
             "src/Engine.php",
             "src/games/Even.php",
             "src/games/Calc.php",
-            "src/games/Gcd.php"
+            "src/games/Gcd.php",
+            "src/games/Progression.php"
         ]
     },
     "authors": [

@@ -27,3 +27,12 @@ $ make brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm.svg)](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm)
+
+
+### Brain game `progression`
+```
+$ make brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/d16DXT2oa9JORzr5Egww2V8JK.svg)](https://asciinema.org/a/d16DXT2oa9JORzr5Egww2V8JK)
+

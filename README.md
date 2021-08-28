@@ -20,3 +20,10 @@ $ make brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py.svg)](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py)
+
+### Brain game `Gcd`
+```
+$ make brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm.svg)](https://asciinema.org/a/ehIyIzLE0csj2i8TS9yiMKTPm)

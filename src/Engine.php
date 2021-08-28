@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Even;
+namespace Brain\Games\Engine;
 
 use function Brain\Games\Cli\greeting;
 use function cli\line;
@@ -8,23 +8,15 @@ use function cli\prompt;
 
 const COUNT_OF_TRY = 3;
 
-function isEven(int $num): bool
-{
-    if (!($num % 2)) {
-        return true;
-    }
-    return false;
-}
 
-function run(): void
+function game($title, $fnGenQuestion): void
 {
     greeting();
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    line($title);
     $i = 0;
     do {
-        $num = random_int(1, 22);
-        $rigthAnswer = isEven($num) ? 'yes' : 'no';
-        line("Question: {$num}");
+        [$question, $rigthAnswer] = $fnGenQuestion();
+        line("Question: {$question}");
         $answer = prompt('Your answer');
         if ($answer != $rigthAnswer) {
             line("Not correct! The rigth answer is '{$rigthAnswer}'");

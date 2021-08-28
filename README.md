@@ -12,3 +12,11 @@ $ make brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0.png)](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0)
+
+
+## Brain game `Calc`
+```
+$ make brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py.svg)](https://asciinema.org/a/Ox1s5l84VjkVPtlrTEvWvM4py)

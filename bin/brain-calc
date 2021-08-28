@@ -1,7 +1,8 @@
 #!/usr/bin/env php
 <?php
+
 require_once realpath('vendor/autoload.php');
 
-use Brain\Games\Even;
+use Brain\Games\Calc;
 
-Even\run();
+Calc\run();

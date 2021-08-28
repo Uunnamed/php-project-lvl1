@@ -5,12 +5,15 @@
     "license": "GPL-3.0-or-later",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "autoload": {
         "files" : [
             "src/Cli.php",
-            "src/Even.php"
+            "src/Engine.php",
+            "src/games/Even.php",
+            "src/games/Calc.php"
         ]
     },
     "authors": [

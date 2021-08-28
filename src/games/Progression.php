@@ -24,7 +24,7 @@ function getRandArithmeticProgression(
 
 function run(): void
 {
-    $title = 'What number is missing in the progression?';
+    $decription = 'What number is missing in the progression?';
     $genQuestion = function (): array {
         $progression = getRandArithmeticProgression();
          $i = random_int(0, count($progression) - 1);
@@ -33,5 +33,5 @@ function run(): void
          $question = implode(' ', $progression);
          return [$question, $answer];
     };
-    game($title, $genQuestion);
+    game($decription, $genQuestion);
 }

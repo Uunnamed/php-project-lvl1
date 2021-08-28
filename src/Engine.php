@@ -5,15 +5,15 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const COUNT_OF_TRY = 3;
+const NUMBER_ATTEMPTS = 3;
 
 
-function game(string $title, callable $fnGenQuestion): void
+function game(string $decription, callable $fnGenQuestion): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line($title);
+    line($decription);
     $i = 0;
     do {
         [$question, $rightAnswer] = $fnGenQuestion();
@@ -25,8 +25,8 @@ function game(string $title, callable $fnGenQuestion): void
         }
         line('Correct!');
         $i++;
-    } while ($i < COUNT_OF_TRY);
-    $result = ($i == COUNT_OF_TRY)
+    } while ($i < NUMBER_ATTEMPTS);
+    $result = ($i == NUMBER_ATTEMPTS)
             ? "Congratulations, {$name}!"
             : "Let's try again, {$name}!";
     line($result);

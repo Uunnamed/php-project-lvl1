@@ -27,7 +27,7 @@ function calc(string $operator, int $num1, int $num2): int
 
 function run(): void
 {
-    $title = 'What is the result of the expression?';
+    $decription = 'What is the result of the expression?';
     $genQuestion = function (): array {
         $operations = ['*', '-', '+'];
         $operator = $operations[random_int(0, count($operations) - 1)];
@@ -37,5 +37,5 @@ function run(): void
         $answer = calc($operator, $num1, $num2);
         return [$question, $answer];
     };
-    game($title, $genQuestion);
+    game($decription, $genQuestion);
 }

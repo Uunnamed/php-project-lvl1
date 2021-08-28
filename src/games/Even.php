@@ -4,23 +4,22 @@ namespace Brain\Games\Even;
 
 use function Brain\Games\Engine\game;
 
+const MAX_NUMBER = 50;
+
 function isEven(int $num): bool
 {
-    if (($num % 2) == 0) {
-        return true;
-    }
-    return false;
+    return $num % 2 == 0;
 }
 
 
 
 function run(): void
 {
+    $decription = 'Answer "yes" if the number is even, otherwise answer "no".';
     $genQuestion = function (): array {
-        $num = random_int(1, 22);
-        $rigthAnswer = isEven($num) ? 'yes' : 'no';
-        return [$num, $rigthAnswer];
+        $num = random_int(1, MAX_NUMBER);
+        $answer = isEven($num) ? 'yes' : 'no';
+        return [$num, $answer];
     };
-    $title = 'Answer "yes" if the number is even, otherwise answer "no".';
-    game($title, $genQuestion);
+    game($decription, $genQuestion);
 }

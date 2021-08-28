@@ -18,11 +18,11 @@ function isPrime(int $n): bool
 
 function run(): void
 {
-    $title = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $decription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $genQuestion = function (): array {
         $question = random_int(1, MAX_RAND_INT);
         $answer = isPrime($question) ? "yes" : "no";
         return [$question, $answer];
     };
-    game($title, $genQuestion);
+    game($decription, $genQuestion);
 }

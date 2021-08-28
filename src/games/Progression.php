@@ -16,7 +16,7 @@ function getRandArithmeticProgression(
     $randOffset = random_int(0, MAX_OFFSET);
     $progression = [$randOffset];
     $cnt = random_int($min, $max);
-    for ($i = 1; $i <= $cnt; $i++) {
+    for ($i = 1; $i < $cnt; $i++) {
         $progression[] = $progression[$i - 1] + $randOffset;
     }
     return $progression;

@@ -14,7 +14,7 @@ $ make brain-even
 [![asciicast](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0.png)](https://asciinema.org/a/IT4ct3lSnD0pj5qQ4DVuHLch0)
 
 
-## Brain game `Calc`
+### Brain game `Calc`
 ```
 $ make brain-calc
 ```

@@ -30,7 +30,7 @@ function run(): void
          $i = random_int(0, count($progression));
          $answer = $progression[$i];
          $progression[$i] = '..';
-         $question = implode(', ', $progression);
+         $question = implode(' ', $progression);
          return [$question, $answer];
     };
     game($title, $genQuestion);
